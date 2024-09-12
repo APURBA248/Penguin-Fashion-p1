@@ -5,23 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin-Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        .font-bebas{
+            font-family: "Bebas Neue", sans-serif;
+        }
+        .font-roboto{
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
   </head>
   <body>
     <!-- header start -->
     <header class="bg-[#FFFBF0]">
-      <nav class="flex flex-col lg:flex-row justify-between items-center px-2 md:px-6 lg:px-60 py-10">
+      <!-- header nav start -->
+      <nav
+        class="flex flex-col lg:flex-row justify-between items-center px-2 md:px-6 lg:px-60 py-10"
+      >
         <div class="logo">
           <img class="w-80" src="./icons/logo.png" alt="" />
         </div>
-        <ul class="flex mt-4 lg:mt-0">
-          <li class="mx-1.5 md:mx-3 lg:mx-10 text-[#3C3C3C] font-medium md:text-lg"><a href="#">Home</a></li>
-          <li class="mx-1.5 md:mx-3 lg:mx-10 text-[#3C3C3C] font-medium md:text-lg"><a href="#">product</a></li>
-          <li class="mx-1.5 md:mx-3 lg:mx-10 text-[#3C3C3C] font-medium md:text-lg"><a href="#">About us</a></li>
-          <li class="mx-1.5 md:mx-3 lg:mx-10 text-[#3C3C3C] font-medium md:text-lg"><a href="#">Contact us</a></li>
+        <ul class="flex mt-4 lg:mt-0 font-roboto">
+          <li
+            class="mx-1.5 md:mx-3 lg:mx-10 text-[#3C3C3C] font-medium md:text-lg"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="mx-1.5 md:mx-3 lg:mx-10 text-[#3C3C3C] font-medium md:text-lg"
+          >
+            <a href="#">product</a>
+          </li>
+          <li
+            class="mx-1.5 md:mx-3 lg:mx-10 text-[#3C3C3C] font-medium md:text-lg"
+          >
+            <a href="#">About us</a>
+          </li>
+          <li
+            class="mx-1.5 md:mx-3 lg:mx-10 text-[#3C3C3C] font-medium md:text-lg"
+          >
+            <a href="#">Contact us</a>
+          </li>
         </ul>
       </nav>
+      <!-- header banner start -->
+      <div class="banner-container px-2 md:px-6 lg:px-60 py-10 flex flex-col lg:flex-row justify-between items-center font-roboto">
+        <div class="banner-info text-center lg:text-start space-y-4">
+            <h1 class="text-7xl text-[#363958] font-bebas"><span class="text-[#FABE4C]">Be the Penguins</span><br>of Winter</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing 
+            <br>and typesetting industry.</p>
+            <button class="py-5 px-8 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-lg text-white"><i class="fa-solid pr-2 fa-cart-shopping"></i>BUY NOW</button>
+        </div>
+        <div class="banner-img mt-10 lg:m-0">
+            <img  src="./images/model.png" alt="">
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>
+    <!-- icon kit -->
+    <script src="https://kit.fontawesome.com/70a4920640.js" crossorigin="anonymous"></script>
   </body>
 </html>
